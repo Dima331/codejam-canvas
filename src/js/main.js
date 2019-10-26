@@ -9,16 +9,23 @@ function draw() {
     //     }
     // }
     // 2 матрица
-    for (var i = 0; i < dataRgba.length; i++) {
-        for (var j = 0; j < dataRgba.length; j++) {
-            ctx.fillStyle = 'rgba(' +
-                dataRgba[i][j][0] + ',' +
-                dataRgba[i][j][1] + ',' +
-                dataRgba[i][j][2] + ',' +
-                dataRgba[i][j][3] + ')';
-            ctx.fillRect(j * 16, i * 16, 16, 16);
-        }
-    }
+    // for (var i = 0; i < dataRgba.length; i++) {
+    //     for (var j = 0; j < dataRgba.length; j++) {
+    //         ctx.fillStyle = 'rgba(' +
+    //             dataRgba[i][j][0] + ',' +
+    //             dataRgba[i][j][1] + ',' +
+    //             dataRgba[i][j][2] + ',' +
+    //             dataRgba[i][j][3] + ')';
+    //         ctx.fillRect(j * 16, i * 16, 16, 16);
+    //     }
+    // }
+    //картинка
+    var img = new Image();
+    console.log(img)
+    img.onload = function() {
+        ctx.drawImage(img, 0, 0, 512, 512);
+    };
+    img.src = "../img/image.png";
 }
 
 draw()
