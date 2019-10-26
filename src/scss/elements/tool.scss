@@ -1,0 +1,71 @@
+.tool {
+    .tool__btn {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        padding-left: 60px;
+        position: relative;
+        &:hover {
+            font-weight: 600;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &_fill-drip {
+            &:before {
+                background-image: url("../img/icons/fill-drip.svg");
+            }
+        }
+        &_eye-dropper {
+            &:before {
+                background-image: url("../img/icons/eye-dropper.svg");
+            }
+        }
+        &_arrows-alt {
+            &:before {
+                background-image: url("../img/icons/arrows-alt.svg");
+            }
+        }
+        &_arrows {
+            &:before {
+                background-image: url("../img/icons/arrows.svg");
+            }
+        }
+        &_grey {
+            &:before {
+                background-color: #C4C4C4;
+                border: 1px solid #000000;
+                border-radius: 50%;
+            }
+        }
+        &_green {
+            &:before {
+                background-color: #41F795;
+                border: 1px solid #000000;
+                border-radius: 50%;
+            }
+        }
+        &_red {
+            &:before {
+                background-color: #F74141;
+                border: 1px solid #000000;
+                border-radius: 50%;
+            }
+        }
+        &_blue {
+            &:before {
+                background-color: #41B6F7;
+                border: 1px solid #000000;
+                border-radius: 50%;
+            }
+        }
+    }
+}

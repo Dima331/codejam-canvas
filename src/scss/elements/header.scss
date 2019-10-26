@@ -1,0 +1,32 @@
+.header {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    .header__header {
+        display: flex;
+        padding: 15px 0;
+        align-items: center;
+    }
+    .header__burger {
+        background-image: url("../img/icons/burger.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 18px;
+        height: 12px;
+        margin-right: 20px;
+        padding: 5px;
+    }
+    .header__dec {
+        width: 4px;
+        height: 16px;
+        background-image: url("../img/icons/dots.svg");
+        background-position: center;
+        margin-left: auto;
+        padding: 5px;
+        background-repeat: no-repeat;
+    }
+    .header__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.87);
+    }
+}
