@@ -7,6 +7,44 @@ html(lang='en')
     link(rel='stylesheet', href='css/main.min.css')
     title codejam-canvas
   body.body
+    .warpper
+        header.header
+          .header__header.container
+            button(type="button").header__burger
+            .header__title CodeJam - Pallete
+            button(type="button").header__dec
+        main.main
+          .container
+            .workspace
+              .workspace__tools
+                ul.tools
+                  li.tools__item.tool 
+                    button(type="button").tool__btn.tool__btn_fill-drip Paint bucket
+                  li.tools__item.tool
+                    button(type="button").tool__btn.tool__btn_eye-dropper Choose color
+                  li.tools__item.tool
+                    button(type="button").tool__btn.tool__btn_arrows-alt Move
+                  li.tools__item.tool
+                    button(type="button").tool__btn.tool__btn_arrows Transform
+                ul.tools
+                  li.tools__item.tool
+                    button(type="button").tool__btn.tool__btn_grey Current color
+                  li.tools__item.tool
+                    button(type="button").tool__btn.tool__btn_green Prev color
+                  li.tools__item.tool
+                    button(type="button").tool__btn.tool__btn_red red
+                  li.tools__item.tool
+                    button(type="button").tool__btn.tool__btn_blue blue
+                ul.tools
+                  li.tools__item.tool
+                    button(type="button").tool__btn.tool__btn_canvas#fourToFour 4x4
+                  li.tools__item.tool
+                    button(type="button").tool__btn.tool__btn_canvas#thirtyToThirty 32x32
+                  li.tools__item.tool
+                    button(type="button").tool__btn.tool__btn_canvas#image image
+              .workspace__space
+                canvas(width="512px" height="512px")#canvas
+
     script( src="js/main.min.js")
 
     
